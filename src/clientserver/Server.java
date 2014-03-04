@@ -35,7 +35,7 @@ public class Server implements Remote {
 	
 	public static ArrayList<KeyValuePair> KVStore;
 	
-	public static void main(String argv[]) throws SshException, IOException, OutOfMemoryError{
+	public static void main(String argv[]) IOException, OutOfMemoryError{
 		try {
 			
 			Socket serversocket = new Socket("localhost", 12345);
