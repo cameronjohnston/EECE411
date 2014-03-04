@@ -19,8 +19,6 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
-import org.rev6.scf.SshException;
-
 
 public class Server implements Remote {
 	
@@ -35,7 +33,7 @@ public class Server implements Remote {
 	
 	public static ArrayList<KeyValuePair> KVStore;
 	
-	public static void main(String argv[]) IOException, OutOfMemoryError{
+	public static void main(String argv[]) throws IOException, OutOfMemoryError{
 		try {
 			
 			Socket serversocket = new Socket("localhost", 12345);
